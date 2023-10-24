@@ -56,6 +56,7 @@ class FormController extends Controller
             'notelp' => $notelp,
             'berat' => $request->berat,
             'layanan' => $request->layanan,
+            'kondisi' => $request->kondisi,
             'bukti' => $file_name
         ];
 
@@ -114,6 +115,7 @@ class FormController extends Controller
                 'notelp' => $notelp,
                 'berat' => $request->berat,
                 'layanan' => $request->layanan,
+                'kondisi' => $request->kondisi,
                 'bukti' => $file_name
             ]);
         }

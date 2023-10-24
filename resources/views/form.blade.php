@@ -28,7 +28,7 @@
                 @csrf
             
                 <div class="form-group">
-                    <label>Nama</label>
+                    <label>Keterangan Barang</label>
                     <input class="form-control" name="nama" placeholder="...">
                     @error('nama')
                     <div class="alert alert-danger"> {{ $message }} </div>
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Nomor Telepon</label>
+                    <label>Kecacatan</label>
                     <input type="text" class="form-control" name="notelp" placeholder="...">
                     @error('notelp')
                     <div class="alert alert-danger"> {{ $message }} </div>
@@ -44,7 +44,7 @@
                 </div>
                 
                 <div class="form-group">
-                    <label>Berat laundry (minimal 2.5 kg, maksimal 99.99 kg)</label>
+                    <label>Jumlah Barang</label>
                     <input class="form-control" type="text" name="berat" placeholder="...">
                     @error('berat')
                     <div class="alert alert-danger"> {{ $message }} </div>
@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="layanan">Layanan</label>
+                    <label for="layanan">Jenis Barang</label>
                     <div class="select-wrapper">
                         <select id="layanan" name="layanan" class="form-control">
                             <option selected value="0">Cuci kilat (Rp9000/kg)</option>
@@ -66,6 +66,25 @@
                         <div class="select-icon"></div>
                     </div>
                     @error('layanan')
+                    <div class="alert alert-danger">{{ $message }}</div>
+                    @enderror
+                </div>
+
+                <div class="form-group">
+                    <label for="kondisi">Kondisi Barang</label>
+                    <div class="select-wrapper">
+                        <select id="kondisi" name="kondisi" class="form-control">
+                            <option selected value="0">Cuci kilat (Rp9000/kg)</option>
+                            <option value="1">Cuci basah (Rp3000/kg)</option>
+                            <option value="2">Cuci kering (Rp4000/kg)</option>
+                            <option value="3">Cuci lipat (Rp5000/kg)</option>
+                            <option value="4">Cuci setrika (Rp6000/kg)</option>
+                            <option value="5">Setrika (Rp4000/kg)</option>
+                            <option value="6">Penghilangan noda (Rp15000/kg)</option>
+                        </select>
+                        <div class="select-icon"></div>
+                    </div>
+                    @error('kondisi')
                     <div class="alert alert-danger">{{ $message }}</div>
                     @enderror
                 </div>

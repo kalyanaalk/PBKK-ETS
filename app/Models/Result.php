@@ -21,6 +21,7 @@ class Result extends Model
         'notelp',
         'berat',
         'layanan',
+        'kondisi',
         'bukti',
     ];
 }
