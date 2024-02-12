@@ -13,11 +13,11 @@
                 </div>
 
                 <div class="p-6 text-gray-900">
-                    <button class="btn btn-dark"><a style="padding: 10px; text-decoration: none; color: white; background-color: black;" href="/result">List Barang</a></button>
+                    <button class="btn btn-dark"><a style="padding: 10px; text-decoration: none; color: white; background-color: black;" href="/result">Daftar Transaksi</a></button>
                 </div>
 
                 <div class="p-6 text-gray-900">
-                    <button class="btn btn-dark"><a style="padding: 10px; text-decoration: none; color: white; background-color: black;" href="/form">Tambah Barang</a></button>
+                    <button class="btn btn-dark"><a style="padding: 10px; text-decoration: none; color: white; background-color: black;" href="/form">Form Pemesanan</a></button>
                 </div>
             </div>
         </div>
